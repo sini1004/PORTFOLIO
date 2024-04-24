@@ -12,16 +12,16 @@ import Main from '../components/Main';
 const HomeView = () => {
   return(
     <>
-      <Skip/>
-      <Header/>
+      <Skip />
+      <Header />
       <Main>
-        <Intro/>
-          <Skill />
-          <Site />
-          <Port />
-          <Contact />
-        </Main>
-        <Footer />
+        <Intro />
+        <Skill />
+        <Site />
+        <Port />
+        <Contact />
+      </Main>
+      <Footer />
     </>
   )
 }

@@ -1,10 +1,15 @@
 import React from "react";
 
+const introText = {
+  title: "port developer",
+  desc: ["talent isssss", "found at the end of the", "effort"],
+};
+
 const Intro = () => {
   return (
     <section id="intro">
       <div className="intro__inner">
-        <h1 className="intro__title">port</h1>
+        <h1 className="intro__title">{introText.title}</h1>
         <div className="intro__lines" aria-hidden="true">
           <span className="line"></span>
           <span className="line"></span>
@@ -16,9 +21,9 @@ const Intro = () => {
         </div>
         <div className="intro__text">
           <div className="text">
-            <div>talent is</div>
-            <div>found at the end of the</div>
-            <div>effort</div>
+            <div>{introText.desc[0]}</div>
+            <div>{introText.desc[1]}</div>
+            <div>{introText.desc[2]}</div>
           </div>
           <div className="img">
             <img src="{about}" alt="어바웃" />

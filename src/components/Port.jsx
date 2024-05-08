@@ -7,7 +7,6 @@ import port04 from "../assets/img/port04.jpg";
 const portText = [
   {
     num: "01",
-
     title: "포폴 타이틀 작성",
     desc: "포폴 설명 작성하기",
     img: port01,
@@ -42,6 +41,33 @@ const portText = [
     view: "https://lacosteshop.netlify.app/",
     name: "포트폴리오",
   },
+  {
+    num: "05",
+    title: "포폴 타이틀 작성",
+    desc: "포폴 설명 작성하기",
+    img: port02,
+    code: "https://github.com/sini1004/LACOSTE",
+    view: "https://lacosteshop.netlify.app/",
+    name: "포트폴리오",
+  },
+  {
+    num: "06",
+    title: "포폴 타이틀 작성",
+    desc: "포폴 설명 작성하기",
+    img: port03,
+    code: "https://github.com/sini1004/LACOSTE",
+    view: "https://lacosteshop.netlify.app/",
+    name: "포트폴리오",
+  },
+  {
+    num: "07",
+    title: "포폴 타이틀 작성",
+    desc: "포폴 설명 작성하기",
+    img: port04,
+    code: "https://github.com/sini1004/LACOSTE",
+    view: "https://lacosteshop.netlify.app/",
+    name: "포트폴리오",
+  },
 ];
 
 const Port = () => {
@@ -49,7 +75,7 @@ const Port = () => {
     <section id="port">
       <div className="port__inner">
         <div className="port__title">
-          portfolio<em>포트폴리오</em>
+          portfolio <em>포폴 작업물</em>
         </div>
         <div className="port__wrap">
           {portText.map((port, key) => (

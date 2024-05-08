@@ -1,9 +1,6 @@
 import React from "react";
 
-const introText = {
-  title: "port developer",
-  desc: ["talent isssss", "found at the end of the", "effort"],
-};
+import { introText } from "../constants";
 
 const Intro = () => {
   return (

@@ -14,6 +14,13 @@
     justify-content: center;
   }
 
+  // intro 텍스트 + 로띠
+  .intro__main {
+    width: 100%;
+    @include flex-between;
+    padding: 0 5%;
+  }
+
   .intro__title {
     // font-size: 10vw;
     font-size: 1vw;

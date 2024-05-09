@@ -1,20 +1,30 @@
 import React from "react";
 
 import { introText } from "../constants";
+import Lottie from "react-lottie";
+import animationData from "../assets/lotties/typing";
 
 const Intro = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
+
   return (
     <section id="intro">
       <div className="intro__inner">
-        <h1 className="intro__title">{introText.title}</h1>
-        <div className="intro__lines" aria-hidden="true">
-          <span className="line"></span>
-          <span className="line"></span>
-          <span className="line"></span>
-          <span className="line"></span>
-          <span className="line"></span>
-          <span className="line"></span>
-          <span className="line"></span>
+        <div className="intro__main">
+          <h1 className="intro__title">{introText.title}</h1>
+          <Lottie
+            options={defaultOptions}
+            speed={0.7}
+            height={400}
+            width={400}
+          />
         </div>
         <div className="intro__text">
           <div className="text">

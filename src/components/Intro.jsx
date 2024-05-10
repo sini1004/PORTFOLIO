@@ -1,6 +1,7 @@
 import React from "react";
 
 import { introText } from "../constants";
+import TypingEffect from "../effect/TypingEffect";
 import Lottie from "react-lottie";
 import animationData from "../assets/lotties/typing";
 
@@ -19,13 +20,8 @@ const Intro = () => {
     <section id="intro">
       <div className="intro__inner">
         <div className="intro__main">
-          <h1 className="intro__title">{introText.title}</h1>
-          <Lottie
-            options={defaultOptions}
-            speed={0.7}
-            width={680}
-            height={400}
-          />
+          <TypingEffect text={introText.title} />
+          <Lottie options={defaultOptions} speed={1} width={680} height={400} />
         </div>
         <div className="intro__text">
           <div className="text">

@@ -18,10 +18,16 @@
   .intro__main {
     width: 100%;
     @include flex-between;
-    padding: 0 5%;
-    opacity: 0.1; //임시 흐림효과
+    opacity: 0.4; //임시 흐림효과
+
+    .typing__effect {
+      width: 60%;
+      display: flex;
+      align-items: center;
+    }
 
     .intro__title {
+      width: 56%;
       // font-size: 10vw;
       font-size: 1vw;
       text-transform: uppercase;
@@ -29,14 +35,35 @@
       font-weight: 800;
       white-space: nowrap;
       text-indent: -0.5vw;
-      letter-spacing: -0.3vw;
+      // letter-spacing: -0.1vw;
+      display: inline-block;
 
       @media (max-width: 320px) {
         display: none;
       }
     }
     .lottie__svg {
-      border: 1px solid blue;
+    }
+
+    .cursor {
+      display: inline-block;
+      vertical-align: middle;
+      animation: blink-animation 0.8s infinite; /* 깜빡이는 애니메이션을 추가합니다. */
+      position: absolute; /* 텍스트에 상대적으로 위치하도록 설정합니다. */
+      top: 0;
+      right: 0; /* 커서를 텍스트의 오른쪽 끝에 위치하도록 설정합니다. */
+    }
+
+    @keyframes blink-animation {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
     }
   }
 

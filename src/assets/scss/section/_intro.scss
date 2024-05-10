@@ -8,7 +8,7 @@
   align-items: flex-start;
   justify-content: flex-end;
   flex-direction: column;
-  padding: 16px;
+  padding: 16px 0 16px 16px;
 
   @media (max-width: 800px) {
     justify-content: center;
@@ -19,20 +19,24 @@
     width: 100%;
     @include flex-between;
     padding: 0 5%;
-  }
+    opacity: 0.1; //임시 흐림효과
 
-  .intro__title {
-    // font-size: 10vw;
-    font-size: 1vw;
-    text-transform: uppercase;
-    line-height: 1;
-    font-weight: 800;
-    white-space: nowrap;
-    text-indent: -0.5vw;
-    letter-spacing: -0.3vw;
+    .intro__title {
+      // font-size: 10vw;
+      font-size: 1vw;
+      text-transform: uppercase;
+      line-height: 1;
+      font-weight: 800;
+      white-space: nowrap;
+      text-indent: -0.5vw;
+      letter-spacing: -0.3vw;
 
-    @media (max-width: 320px) {
-      display: none;
+      @media (max-width: 320px) {
+        display: none;
+      }
+    }
+    .lottie__svg {
+      border: 1px solid blue;
     }
   }
 

@@ -10,6 +10,7 @@ const Intro = () => {
     autoplay: true,
     animationData: animationData,
     rendererSettings: {
+      className: "lottie__svg", // svg에 적용
       preserveAspectRatio: "xMidYMid slice",
     },
   };
@@ -22,8 +23,8 @@ const Intro = () => {
           <Lottie
             options={defaultOptions}
             speed={0.7}
+            width={680}
             height={400}
-            width={400}
           />
         </div>
         <div className="intro__text">

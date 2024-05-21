@@ -21,15 +21,13 @@
     opacity: 0.4; //임시 흐림효과
 
     .typing__effect {
-      width: 60%;
+      width: 56%;
       display: flex;
       align-items: center;
     }
 
     .intro__title {
-      width: 56%;
-      // font-size: 10vw;
-      font-size: 1vw;
+      font-size: 5vw;
       text-transform: uppercase;
       line-height: 1;
       font-weight: 800;

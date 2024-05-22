@@ -21,8 +21,6 @@ const Site = () => {
               </div>
               <h3 className="title">{site.title}</h3>
               <div className="btn">
-                {/* <a href={site.page}>page</a> */}
-                {/* <Link to={`/page-detail/${key + 1}`}>page</Link> */}
                 <Link to={`/page-detail/${site.id}`}>page</Link>
                 <a href={site.view}>view</a>
               </div>

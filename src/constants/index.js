@@ -2,6 +2,8 @@ import port01 from "../assets/img/port01.jpg";
 import port02 from "../assets/img/port02.jpg";
 import port03 from "../assets/img/port03.jpg";
 import port04 from "../assets/img/port04.jpg";
+import logoimg01 from "../assets/img/page/logo01.jpg";
+import logoimg02 from "../assets/img/page/logo02.png";
 
 export const headerNav = [
   {
@@ -49,6 +51,7 @@ export const skillText = [
 export const siteText = [
   {
     id: 1,
+    logoimg: "assets/img/page/id_01_logo.jpg",
     text: ["make", "site compliant with", "webstandard"],
     title: "비트를 이용한 사이트 제작",
     code: "https://github.com/webstoryboy/port2023-vite",
@@ -61,6 +64,7 @@ export const siteText = [
   },
   {
     id: 2,
+    logoimg: "assets/img/page/id_01_logo.jpg",
     text: ["make", "site compliant with", "react.js"],
     title: "리액트를 이용한 사이트 제작",
     code: "https://github.com/webstoryboy/port2023-react",
@@ -73,6 +77,8 @@ export const siteText = [
   },
   {
     id: 3,
+    logoimg: logoimg02,
+    logoalt: "에너지기술 연구원",
     text: ["make", "site compliant with", "vue.js"],
     title: "뷰를 이용한 사이트 제작",
     code: "https://github.com/webstoryboy/port2023-vue",
@@ -85,8 +91,12 @@ export const siteText = [
   },
   {
     id: 4,
+    logoimg: logoimg01,
+    logoalt: "여성가족부",
     text: ["make", "site compliant with", "next.js"],
-    title: "넥스트를 이용한 사이트 제작",
+    title: "사이트 라우터 연습 타이틀",
+    link: "https://mogefdatacontest.co.kr/",
+    desc: "'청소년데이터 융복합 분석·활용 공모전' 은 여성가족부에서 주최하는 공모전 웹 사이트로서 공모전 접수를 할 수 있으며, 공모전 개요, 요강과 접수 확인이 가능합니다.",
     code: "https://github.com/webstoryboy/port2023-next",
     view: "https://port2023-next.netlify.app",
     info: [

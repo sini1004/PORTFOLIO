@@ -12,6 +12,13 @@
   justify-content: space-between;
 }
 
+// 양쪽 여백 정렬
+@mixin flex-evenly {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
 // 중앙 정렬
 @mixin position-center {
   position: absolute;

@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import HomeView from "./views/HomeView";
 import Site from "./components/Site";
-import PageDetail from "./page/siteDetail";
+import ProjectDetail from "./page/ProjectDetail";
 
 import lenis from "./utils/lenis";
 import link from "./utils/link";
@@ -18,7 +18,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomeView />} />
         <Route path="/site" element={<Site />} />
-        <Route path="/page-detail/:id" element={<PageDetail />} />
+        <Route path="/page-detail/:id" element={<ProjectDetail />} />
       </Routes>
     </BrowserRouter>
   );

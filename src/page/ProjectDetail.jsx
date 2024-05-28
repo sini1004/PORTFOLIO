@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
 import { siteText } from "../constants";
 
@@ -7,42 +7,62 @@ const ProjectDetail = () => {
   const site = siteText.find((item) => item.id === parseInt(id));
 
   const [animate, setAnimate] = useState(false);
+  const projectRef = useRef(null);
 
   useEffect(() => {
-    setAnimate(true);
+    window.scrollTo(0, 0);
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setAnimate(true);
+          observer.unobserve(projectRef.current);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (projectRef.current) {
+      observer.observe(projectRef.current);
+    }
+
+    return () => {
+      if (projectRef.current) {
+        observer.unobserve(projectRef.current);
+      }
+    };
   }, []);
 
   if (!site) {
     return <div>Page not found</div>;
   }
 
-  const displayLink = site.link
-    .replace(/^https?:\/\/(www\.)?/, "")
-    .replace(/\/$/, "");
+  // const displayLink = site.link
+  //   .replace(/^https?:\/\/(www\.)?/, "")
+  //   .replace(/\/$/, "");
 
   return (
     <div className={`project__detail design${site.id}`}>
       <div className="project__inner">
-        <div className={`project ${animate ? "animate" : ""}`}>
+        <div ref={projectRef} className={`project ${animate ? "animate" : ""}`}>
           <div className="project__img">
             <img src={site.logoimg} alt={site.logoalt} />
           </div>
           <div className="project__desc">
             <h1>{site.title}</h1>
-            <span>
-              <a href={site.link} target="_blank">
-                {displayLink}
-              </a>
-            </span>
+            <span>{site.period}</span>
             <p>{site.desc}</p>
           </div>
         </div>
 
-        <div className={`project__contents ${animate ? "animate" : ""}`}>
-          <div className="detail__img">이미지 캡쳐영역</div>
+        <div className="project__contents">
+          <div className="detail__img">
+            <img src={site.screen} alt={site.screenalt} />
+          </div>
         </div>
 
         <p>{site.text.join(", ")}</p>
+
         <div className="info">
           {site.info.map((info, index) => (
             <span key={index}>{info}</span>

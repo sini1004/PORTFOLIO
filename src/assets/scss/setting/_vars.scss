@@ -3,12 +3,18 @@
   --mainKor-font: "nanumSquareNeo";
   --mainNum-font: "gmarket";
 
-  --mainBg-color: #e3fbff;
-  --subBg100: #cdc0b1;
-  --subBg200: #afa395;
-  --subBg300: #81887c;
-  --subBg400: #afa7a2;
-  --subBg500: #a6afa2;
+  --mainBg-color: #ffbe98;
+  --subBg100: #f4ceb7;
+  --subBg200: #e2bb9a;
+  --subBg300: #d68861;
+  --subBg400: #ca848a;
+  --subBg500: #964f4c;
+  --subBg600: #a78c7b;
+  --subBg700: #dbc8bd;
+  --subBg800: #85677b;
+  --subBg900: #c5a253;
+
+  //#ffbe98, #f4ceb7, #d68861, #e2bb9a , #ca848a, #964f4c, #a78c7b, #dbc8bd, #85677b, #c5a253
 
   --white: #fff;
   --black: #000;
@@ -45,5 +51,5 @@
 }
 
 body {
-  background-color: var(--mainBg-color);
+  background-color: var(--white);
 }

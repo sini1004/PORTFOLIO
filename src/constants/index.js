@@ -6,6 +6,8 @@ import logoimg01 from "../assets/img/page/logo/logo01.jpg";
 import logoimg02 from "../assets/img/page/logo/logo02.png";
 import logoimg03 from "../assets/img/page/logo/logo03.png";
 import logoimg04 from "../assets/img/page/logo/logo04.svg";
+import mainimg01 from "../assets/img/page/screen/mainimg01.jpg";
+import mainimg02 from "../assets/img/page/screen/mainimg02.jpg";
 import scrimg01 from "../assets/img/page/screen/screen01.jpg";
 
 export const headerNav = [
@@ -57,7 +59,7 @@ export const siteText = [
     id: 1,
     logoimg: logoimg01,
     logoalt: "여성가족부",
-    period: "2023.2 - 2023.4",
+    period: "2023.2 - 2024.6",
     text: ["make", "site compliant with", "next.js"],
     title: "사이트 라우터 연습 타이틀",
     link: "https://mogefdatacontest.co.kr/",
@@ -76,10 +78,13 @@ export const siteText = [
     id: 2,
     logoimg: logoimg03,
     logoalt: "전통문화혁신플랫폼",
+    period: "2023.11 - 2024.2",
     text: ["make", "site compliant with", "vue.js"],
     title: "뷰를 이용한 사이트 제작",
     link: "http://chsr.re.kr/",
     desc: "",
+    screen: scrimg01,
+    screenalt: "전통문화혁신플랫폼",
     code: "https://github.com/webstoryboy/port2023-vue",
     view: "https://port2023-vue.netlify.app",
     info: [
@@ -106,6 +111,88 @@ export const siteText = [
   },
   {
     id: 4,
+    logoimg: logoimg01,
+    logoalt: "여성가족부",
+    text: ["make", "site compliant with", "next.js"],
+    title: "사이트 라우터 연습 타이틀",
+    link: "https://mogefdatacontest.co.kr/",
+    desc: "기존 서비스의 안정적인 운영을 위해 유지보수와 개선 작업을 진행하는 한편, 새로운 서비스의 UI 개발 업무도 맡았습니다.",
+    code: "https://github.com/webstoryboy/port2023-next",
+    view: "https://port2023-next.netlify.app",
+    info: [
+      "site coding",
+      "production period : two days",
+      "use stack : HTML5/CSS3, Scss Variable, next.js",
+    ],
+  },
+];
+
+export const proText = [
+  //  프로젝트 : 여가부-개방관리시스템,공모전 사이트 / 에너지기술연구원관리자페이지 /전통문화플랫폼
+  {
+    id: 1,
+    num: "01",
+    logoimg: logoimg01,
+    logoalt: "여성가족부",
+    period: "2023.2 - 2024.6",
+    text: ["make", "site compliant with", "next.js"],
+    title: "여성가족부 공모전",
+    link: "https://mogefdatacontest.co.kr/",
+    desc: "'청소년데이터 융복합 분석·활용 공모전' 은 여성가족부에서 주최하는 공모전 웹 사이트로서 공모전 접수를 할 수 있으며, 공모전 개요, 요강과 접수 확인이 가능합니다.",
+    main: mainimg01,
+    mainalt: "프로젝트1",
+    screen: scrimg01,
+    screenalt: "공모전공공데이터검색기능",
+    code: "https://github.com/webstoryboy/port2023-next",
+    view: "https://port2023-next.netlify.app",
+    info: [
+      "site coding",
+      "production period : two days",
+      "use stack : HTML5/CSS3, Scss Variable, next.js",
+    ],
+  },
+  {
+    id: 2,
+    num: "02",
+    logoimg: logoimg03,
+    logoalt: "전통문화혁신플랫폼",
+    period: "2023.11 - 2024.2",
+    text: ["make", "site compliant with", "vue.js"],
+    title: "뷰를 이용한 사이트 제작",
+    link: "http://chsr.re.kr/",
+    desc: "",
+    main: mainimg02,
+    mainalt: "프로젝트2",
+    screen: scrimg01,
+    screenalt: "전통문화혁신플랫폼",
+    code: "https://github.com/webstoryboy/port2023-vue",
+    view: "https://port2023-vue.netlify.app",
+    info: [
+      "site coding",
+      "production period : two days",
+      "use stack : HTML5/CSS3, Scss Variable, vue",
+    ],
+  },
+  {
+    id: 3,
+    num: "03",
+    logoimg: logoimg03,
+    logoalt: "전통문화혁신플랫폼",
+    text: ["make", "site compliant with", "vue.js"],
+    title: "뷰를 이용한 사이트 제작",
+    link: "http://chsr.re.kr/",
+    desc: "",
+    code: "https://github.com/webstoryboy/port2023-vue",
+    view: "https://port2023-vue.netlify.app",
+    info: [
+      "site coding",
+      "production period : two days",
+      "use stack : HTML5/CSS3, Scss Variable, vue",
+    ],
+  },
+  {
+    id: 4,
+    num: "04",
     logoimg: logoimg01,
     logoalt: "여성가족부",
     text: ["make", "site compliant with", "next.js"],

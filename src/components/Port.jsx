@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
-import { portText } from "../constants";
+import { proText } from "../constants";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -34,37 +35,33 @@ const Port = () => {
   }, []);
 
   return (
-    <section id="port" ref={horizontalRef}>
-      <div className="port__inner">
-        <div className="port__title">
-          portfolio <em>포폴 작업물</em>
+    <section id="pro" ref={horizontalRef}>
+      <div className="pro__inner">
+        <div className="pro__title">
+          Project <em>프로젝트 작업물</em>
         </div>
-        <div className="port__wrap">
-          {portText.map((port, key) => (
+        <div className="pro__wrap">
+          {proText.map((pro, key) => (
             <article
-              className={`port__item p${key + 1}`}
+              className={`pro__item p${key + 1}`}
               key={key}
               ref={(el) => (sectionsRef.current[key] = el)}
             >
-              <span className="num">{port.num}.</span>
+              <span className="num">{pro.num}</span>
               <a
-                href={port.code}
+                href={pro.link}
                 target="_blank"
-                className="img"
+                className="pro__img"
                 rel="noreferrer"
               >
-                <img src={port.img} alt={port.name} />
+                <img src={pro.main} alt={pro.mainalt} />
               </a>
-              <h3 className="title">{port.title}</h3>
-              <p className="desc">{port.desc}</p>
-              <a
-                href={port.view}
-                target="_blank"
-                className="site"
-                rel="noreferrer"
-              >
-                사이트 보기
-              </a>
+              <h3 className="title">{pro.title}</h3>
+              <p className="date">{pro.period}</p>
+
+              <div className="btn">
+                <Link to={`/page-detail/${pro.id}`}>page</Link>
+              </div>
             </article>
           ))}
         </div>

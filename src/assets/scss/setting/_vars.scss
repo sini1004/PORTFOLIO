@@ -4,6 +4,7 @@
   --mainNum-font: "gmarket";
 
   --mainBg-color: #ffbe98;
+  --baseBg: #f5f4f0;
   --subBg100: #f4ceb7;
   --subBg200: #e2bb9a;
   --subBg300: #d68861;
@@ -51,5 +52,5 @@
 }
 
 body {
-  background-color: var(--white);
+  background-color: var(--baseBg);
 }

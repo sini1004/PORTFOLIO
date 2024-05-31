@@ -9,6 +9,7 @@ import logoimg04 from "../assets/img/page/logo/logo04.svg";
 import mainimg01 from "../assets/img/page/screen/mainimg01.jpg";
 import mainimg02 from "../assets/img/page/screen/mainimg02.jpg";
 import scrimg01 from "../assets/img/page/screen/screen01.jpg";
+import scrimg02 from "../assets/img/page/screen/screen02.jpg";
 
 export const headerNav = [
   {
@@ -144,7 +145,6 @@ export const proText = [
     screen: scrimg01,
     screenalt: "공모전공공데이터검색기능",
     code: "https://github.com/webstoryboy/port2023-next",
-    view: "https://port2023-next.netlify.app",
     info: [
       "site coding",
       "production period : two days",
@@ -160,10 +160,10 @@ export const proText = [
     text: ["make", "site compliant with", "vue.js"],
     title: "뷰를 이용한 사이트 제작",
     link: "http://chsr.re.kr/",
-    desc: "",
+    desc: "ddddddddd",
     main: mainimg02,
     mainalt: "프로젝트2",
-    screen: scrimg01,
+    screen: scrimg02,
     screenalt: "전통문화혁신플랫폼",
     code: "https://github.com/webstoryboy/port2023-vue",
     view: "https://port2023-vue.netlify.app",

@@ -20,8 +20,8 @@ const Intro = () => {
     <section id="intro">
       <div className="intro__inner">
         <div className="intro__main">
-          <TypingEffect text={introText.title} />
-          <Lottie options={defaultOptions} speed={1} width={680} height={400} />
+          {/* <TypingEffect text={introText.title} /> */}
+          {/* <Lottie options={defaultOptions} speed={1} width={680} height={400} /> */}
         </div>
         <div className="intro__text">
           <div className="text">

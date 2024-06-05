@@ -51,6 +51,17 @@
       }
     }
   }
+  &.design5 {
+    background-color: #009dfe;
+    .project__img {
+      border: 7px solid #009dfe;
+    }
+    .project__desc {
+      h1 {
+        color: #009dfe;
+      }
+    }
+  }
 
   .project__inner {
     background-color: var(--white);

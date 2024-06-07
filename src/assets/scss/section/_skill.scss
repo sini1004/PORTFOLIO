@@ -27,7 +27,6 @@
       font-size: 30px;
       height: auto;
       top: 68px;
-      background-color: var(--mainBg-color);
     }
 
     em {
@@ -45,9 +44,9 @@
     }
 
     span {
-      font-size: 5vw;
+      font-size: 3vw;
       line-height: 1;
-      font-size: 900;
+      font-weight: 900;
       font-family: var(--mainNum-font);
 
       @media (max-width: 800px) {
@@ -56,13 +55,13 @@
     }
 
     h3 {
-      font-size: 1.5rem;
+      font-size: 2rem;
       text-decoration: underline;
       text-underline-position: under;
       margin-bottom: 1vw;
     }
     p {
-      margin-bottom: 30vh;
+      margin-bottom: 15vh;
       font-size: 1.1rem;
     }
   }

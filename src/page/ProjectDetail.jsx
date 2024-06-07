@@ -58,6 +58,7 @@ const ProjectDetail = () => {
 
         <div className="project__contents">
           <div className="detail__img">
+            {project.id === 3 && <p>보안상 블러 처리하였습니다.</p>}
             <img src={project.screen} alt={project.screenalt} />
           </div>
         </div>

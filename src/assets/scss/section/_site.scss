@@ -105,22 +105,30 @@
       .text {
         font-family: var(--mainKor-font);
         margin-bottom: 1rem;
+        width: 80%;
       }
       .text_skill {
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin-top: 10px;
       }
       .btn {
+        margin-top: 10px;
         a {
-          text-decoration: underline;
-          text-transform: uppercase;
+          background-color: var(--baseBg);
+          border: 2px solid transparent;
           color: var(--black200);
           font-size: 1rem;
           transition: all 0.3s;
           margin: 0 2px;
+          padding: 3px 5px;
+          border-radius: 6px;
+          box-sizing: border-box;
 
           &:hover {
-            color: var(--black);
+            background-color: transparent;
+            border: 2px solid var(--baseBg);
+            color: var(--baseBg);
+            box-sizing: border-box;
           }
         }
       }

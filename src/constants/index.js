@@ -1,3 +1,4 @@
+import chaImg01 from '../assets/img/challenge01.jpg';
 import port01 from '../assets/img/port01.jpg';
 import port02 from '../assets/img/port02.jpg';
 import port03 from '../assets/img/port03.jpg';
@@ -44,6 +45,7 @@ export const skillText = [
 	{
 		title: 'Listening',
 		desc: '상대방의 이야기를 들어주는 것을 좋아하고 진심을 다해 공감해주는 성격이에요!',
+		chaImg: chaImg01,
 	},
 	{
 		title: 'Less but better',

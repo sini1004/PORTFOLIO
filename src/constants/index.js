@@ -1,4 +1,10 @@
 import chaImg01 from '../assets/img/challenge01.jpg';
+import chaImg02 from '../assets/img/challenge02.jpg';
+import chaImg03 from '../assets/img/challenge03.jpg';
+import chaImg04 from '../assets/img/challenge04.jpg';
+import chaImg05 from '../assets/img/challenge05.jpg';
+import chaImg06 from '../assets/img/challenge06.jpg';
+import chaImg07 from '../assets/img/challenge07.jpg';
 import port01 from '../assets/img/port01.jpg';
 import port02 from '../assets/img/port02.jpg';
 import port03 from '../assets/img/port03.jpg';
@@ -50,26 +56,32 @@ export const skillText = [
 	{
 		title: 'Less but better',
 		desc: "'부족하지만 더 나은'생각으로 프로젝트에 최선을 다합니다.",
+		chaImg: chaImg02,
 	},
 	{
 		title: 'Choice Without Regret',
 		desc: '후회없는 선택과 삶을 살고싶기에 매순간 신중하고 열심히 사려고 노력하고 있습니다. :)',
+		chaImg: chaImg03,
 	},
 	{
 		title: 'Learn',
 		desc: 'Html, CSS, Javascript를 배웠지만 부족함을 느껴 스터디를 통해 리액트, 뷰 등을 배우며 적극적으로 개발에 대한 역량을 키우고 있습니다.',
+		chaImg: chaImg04,
 	},
 	{
 		title: 'Passion',
 		desc: '밝은 에너지로 동료들과 협동하며 매력적인 코딩, 깔끔한 동적 구현을 해내고 마는 퍼블리셔/프론트엔드 개발자가 되겠습니다.',
+		chaImg: chaImg05,
 	},
 	{
 		title: 'Effort',
 		desc: '어떤 일이라도 노력하고 즐기면 그 결과는 빛을 바란다고 생각합니다. 신입의 열정과 도전정신을 깊숙히 새기며 노력하겠습니다.',
+		chaImg: chaImg06,
 	},
 	{
 		title: 'Steadily',
 		desc: '웹디자인을 하며 웹에 대한 호기심이 생겼고 지금은 웹에 대해 공부하며 조금은 느리지만 꾸준하게 성장하고 있다고 생각합니다.',
+		chaImg: chaImg07,
 	},
 ];
 
@@ -120,6 +132,19 @@ export const siteText = [
 		text: ['make', 'site compliant with', 'next.js'],
 		title: '사이트 라우터 연습 타이틀',
 		link: 'https://mogefdatacontest.co.kr/',
+		desc: '기존 서비스의 안정적인 운영을 위해 유지보수와 개선 작업을 진행하는 한편, 새로운 서비스의 UI 개발 업무도 맡았습니다.',
+		code: 'https://github.com/webstoryboy/port2023-next',
+		view: 'https://port2023-next.netlify.app',
+		info: ['site coding', 'production period : two days', 'use stack : HTML5/CSS3, Scss Variable, next.js'],
+	},
+	{
+		id: 5,
+		title: 'wedding invitation',
+		text: [
+			'데이터베이스 역할을 해주는 db.josn파일을 생성하여, 이미지의 url, 가격 등의 정보를 넣어주었습니다. fetch함수를 이용해 API호출을 하였으며, 로그인이 되었을 때에만 상품의 상세페이지를 볼 수 있도록 하였고, 검색 기능을 구현하였습니다. React-Bootstrap과 미디어쿼리를 사용해 반응형으로 작업하였습니다.',
+			'React, json-server, Router, React-Bootstrap, Sass',
+		],
+		link: 'https://wedding-invitation.chang-ju.shin-hee.com',
 		desc: '기존 서비스의 안정적인 운영을 위해 유지보수와 개선 작업을 진행하는 한편, 새로운 서비스의 UI 개발 업무도 맡았습니다.',
 		code: 'https://github.com/webstoryboy/port2023-next',
 		view: 'https://port2023-next.netlify.app',

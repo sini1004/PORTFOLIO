@@ -14,7 +14,7 @@ const Header = () => {
       <div className="header__inner">
         <div className="header__logo">
           <a href="/">
-            portfolio<em>vite</em>
+            portfolio<em>2024</em>
           </a>
         </div>
         <nav
@@ -30,6 +30,9 @@ const Header = () => {
             ))}
           </ul>
         </nav>
+        <div className="header__name">
+          <p>SINI</p>
+        </div>
         <div
           className="header__nav__mobile"
           id="headerToggle"

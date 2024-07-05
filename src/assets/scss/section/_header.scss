@@ -4,8 +4,6 @@
 }
 .header__inner {
   @include flex-between;
-  background-color: rgba(140, 135, 135, 0.1);
-  backdrop-filter: blur(2px);
   padding: 1rem;
 
   .header__logo {
@@ -18,12 +16,17 @@
       font-size: 10px;
       display: block;
       color: var(--black200);
+      letter-spacing: 3px;
     }
   }
 
   .header__nav {
+    border: 1px solid var(--black);
+    padding: 1rem;
+    border-radius: 2rem;
     @media (max-width: 800px) {
       display: none;
+      border: 0;
 
       &.show {
         display: block;
@@ -64,7 +67,7 @@
       a {
         text-transform: uppercase;
         font-size: 14px;
-        padding: 14px;
+        padding: 14px 20px;
         position: relative;
 
         &::before {
@@ -85,9 +88,21 @@
     }
   }
 
+  .header__name {
+    @media (max-width: 800px) {
+      display: none;
+    }
+    p {
+      font-weight: bold;
+      color: var(--point-color);
+      text-shadow: -1px 0px var(--black), 0px 1px var(--black),
+        1px 0px var(--black), 0px -1px var(--black);
+    }
+  }
+
   .header__nav__mobile {
     display: none;
-    width: 40px;
+    width: 30px;
     height: 40px;
     cursor: pointer;
 
@@ -97,7 +112,7 @@
 
     span {
       display: block;
-      width: 40px;
+      width: 30px;
       height: 2px;
       background-color: var(--black);
       margin-top: 19px;
@@ -105,7 +120,7 @@
 
       &::before {
         content: "";
-        width: 40px;
+        width: 30px;
         height: 2px;
         background-color: var(--black);
         position: absolute;
@@ -115,7 +130,7 @@
       }
       &::after {
         content: "";
-        width: 40px;
+        width: 30px;
         height: 2px;
         background-color: var(--black);
         position: absolute;

@@ -3,8 +3,11 @@
   --mainKor-font: "nanumSquareNeo";
   --mainNum-font: "gmarket";
 
-  --mainBg-color: #ffbe98;
+  --mainBg-color: #ece7e1;
   --baseBg: #f5f4f0;
+  --point-color: #f7fe7e;
+  --point-color1: #f3796c;
+
   --subBg100: #f4ceb7;
   --subBg200: #e2bb9a;
   --subBg300: #d68861;
@@ -14,8 +17,6 @@
   --subBg700: #dbc8bd;
   --subBg800: #85677b;
   --subBg900: #c5a253;
-
-  //#ffbe98, #f4ceb7, #d68861, #e2bb9a , #ca848a, #964f4c, #a78c7b, #dbc8bd, #85677b, #c5a253
 
   --white: #fff;
   --black: #000;
@@ -52,5 +53,5 @@
 }
 
 body {
-  background-color: var(--black100);
+  background-color: var(--mainBg-color);
 }

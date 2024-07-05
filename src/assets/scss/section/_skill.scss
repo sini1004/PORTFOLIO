@@ -13,8 +13,9 @@
     left: 0;
     width: 48%;
     height: 5vw;
-    color: var(--black100);
+    color: var(--white);
     border-bottom: 0.4vw solid var(--black100);
+    opacity: 0.1; // 임시 변경하여 opacity를 1로 설정
 
     .skill__title {
       font-size: 4vw;
@@ -41,18 +42,32 @@
     .skill__image {
       position: relative;
       z-index: 1;
+      width: 400px; // 전체 너비 사용
 
       @media (max-width: 800px) {
         display: none;
       }
+
+      img {
+        width: 100%;
+      }
     }
+  }
+
+  .skill__left.sticky {
+    position: static;
   }
 
   .skill__desc {
     width: 50%;
+    color: var(--white);
 
     @media (max-width: 800px) {
       width: 100%;
+    }
+
+    div {
+      transition: font-size 0.5s ease, filter 0.5s ease;
     }
 
     span {
@@ -72,9 +87,33 @@
       text-underline-position: under;
       margin-bottom: 1vw;
     }
+
     p {
-      margin-bottom: 130px;
+      margin-bottom: 200px;
       font-size: 1.1rem;
+    }
+
+    .large-font span {
+      font-size: 4.5vw;
+    }
+
+    .large-font h3 {
+      font-size: 2.5rem;
+    }
+
+    .large-font p {
+      font-size: 1.2rem;
+    }
+
+    .skill__desc span,
+    .skill__desc h3,
+    .skill__desc p {
+      transition: font-size 0.5s ease;
+    }
+
+    .blurred {
+      filter: blur(4px);
+      opacity: 0.5;
     }
   }
 }

@@ -56,12 +56,12 @@ const Skill = () => {
     <section id="skill">
       <div className="skill__inner">
         <div className="skill__left" ref={leftImageRef}>
-          <h2 className="skill__title">
+          <h2 className="skill__title" ref={leftImageRef}>
             Challenge <em>나의 도전</em>
           </h2>
-          <div className="skill__image">
+          {/* <div className="skill__image">
             <img src={currentImage} alt="challenge" />
-          </div>
+          </div> */}
         </div>
         <div className="skill__desc" ref={descRef}>
           {skillText.map((skill, key) => (
@@ -72,9 +72,14 @@ const Skill = () => {
               }`}
               onMouseEnter={() => setCurrentImage(skill.chaImg)}
             >
-              <span>{key + 1}</span>
-              <h3>{skill.title}</h3>
-              <p>{skill.desc}</p>
+              <div className="skill__image">
+                <img src={currentImage} alt="challenge" />
+              </div>
+              <div className="">
+                <span>{key + 1}</span>
+                <h3>{skill.title}</h3>
+                <p>{skill.desc}</p>
+              </div>
             </div>
           ))}
         </div>

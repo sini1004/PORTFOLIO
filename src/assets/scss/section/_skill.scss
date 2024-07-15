@@ -7,64 +7,40 @@
     flex-direction: column;
   }
 
-  .skill__left {
+  .skill__title {
     position: sticky;
     top: 70px;
     left: 0;
-    width: 100%;
-    height: 3vw;
-    color: var(--white);
+    width: 48%;
+    height: 5vw;
+    font-size: 4vw;
+    font-weight: 900;
+    line-height: 1.6;
+    font-family: var(--mainKor-font);
+    text-transform: uppercase;
+    color: var(--black100);
     border-bottom: 0.4vw solid var(--black100);
-    opacity: 0.1; // 임시 변경하여 opacity를 1로 설정
-    border: 1px solid #000;
 
-    .skill__title {
-      font-size: 4vw;
-      font-weight: 900;
-      line-height: 1.6;
-      font-family: var(--mainKor-font);
-      text-transform: uppercase;
-
-      @media (max-width: 800px) {
-        width: 100%;
-        margin-bottom: 10vw;
-        font-size: 30px;
-        height: auto;
-        top: 68px;
-      }
-
-      em {
-        font-size: 1.25rem;
-        font-weight: 400;
-        line-height: 2;
-      }
+    @media (max-width: 800px) {
+      width: 100%;
+      margin-bottom: 10vw;
+      font-size: 30px;
+      height: auto;
+      top: 68px;
     }
 
-    .skill__image {
-      position: relative;
-      z-index: 1;
-      width: 400px; // 전체 너비 사용
-
-      @media (max-width: 800px) {
-        display: none;
-      }
-
-      img {
-        width: 100%;
-      }
+    em {
+      font-size: 1.25rem;
+      font-weight: 400;
+      line-height: 2;
     }
   }
 
   .skill__desc {
-    width: 100%;
-    color: var(--white);
+    width: 50%;
 
     @media (max-width: 800px) {
       width: 100%;
-    }
-
-    div {
-      transition: font-size 0.5s ease, filter 0.5s ease;
     }
 
     span {
@@ -84,33 +60,9 @@
       text-underline-position: under;
       margin-bottom: 1vw;
     }
-
     p {
-      margin-bottom: 200px;
+      margin-bottom: 15vh;
       font-size: 1.1rem;
-    }
-
-    .large-font span {
-      font-size: 4.5vw;
-    }
-
-    .large-font h3 {
-      font-size: 2.5rem;
-    }
-
-    .large-font p {
-      font-size: 1.2rem;
-    }
-
-    .skill__desc span,
-    .skill__desc h3,
-    .skill__desc p {
-      transition: font-size 0.5s ease;
-    }
-
-    .blurred {
-      filter: blur(4px);
-      opacity: 0.5;
     }
   }
 }

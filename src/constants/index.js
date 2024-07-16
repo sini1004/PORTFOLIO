@@ -64,8 +64,8 @@ export const skillText = [
     chaImg: chaImg03,
   },
   {
-    title: "Learn",
-    desc: "Html, CSS, Javascript를 배웠지만 부족함을 느껴 스터디를 통해 리액트, 뷰 등을 배우며 적극적으로 개발에 대한 역량을 키우고 있습니다.",
+    title: "Communication",
+    desc: "원활한 소통을 통해 팀원들과의 협업을 매우 중요하게 생각합니다. 소통은 팀원들과 의견을 공유하고 이해하는데 도움을 주며, 팀의 신뢰를 쌓고 효율적인 협업을 가능하게 합니다.",
     chaImg: chaImg04,
   },
   {

@@ -59,24 +59,24 @@
     }
   }
   &.design4 {
-    background-color: #595fb5;
+    background-color: #3484fd;
     .project__img {
-      border: 7px solid #595fb5;
+      border: 7px solid #3484fd;
     }
     .project__desc {
       h1 {
-        color: #595fb5;
+        color: #3484fd;
       }
     }
   }
   &.design5 {
-    background-color: #009dfe;
+    background-color: #0569ff;
     .project__img {
-      border: 7px solid #009dfe;
+      border: 7px solid #0569ff;
     }
     .project__desc {
       h1 {
-        color: #009dfe;
+        color: #0569ff;
       }
     }
   }
@@ -153,6 +153,13 @@
         border: 1px solid var(--black400);
         border-radius: 1rem;
         overflow: hidden;
+      }
+    }
+
+    .project__text {
+      p {
+        text-indent: -22px;
+        margin-left: 22px;
       }
     }
   }

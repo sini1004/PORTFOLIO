@@ -63,21 +63,28 @@ const ProjectDetail = () => {
           </div>
         </div>
 
-        <p>{project.text.join(", ")}</p>
+        <div className="project__text">
+          {project.text.map((text, index) => (
+            <p key={index}>
+              <span>✏️</span>
+              {text}
+            </p>
+          ))}
+        </div>
 
         <div className="info">
           {project.info.map((info, index) => (
             <span key={index}>{info}</span>
           ))}
         </div>
-        <div className="btn">
+        {/* <div className="btn">
           <a href={project.code} target="_blank" rel="noopener noreferrer">
             Code
           </a>
           <a href={project.view} target="_blank" rel="noopener noreferrer">
             View
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );

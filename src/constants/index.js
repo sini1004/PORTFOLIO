@@ -10,11 +10,15 @@ import port02 from "../assets/img/port02.jpg";
 import port03 from "../assets/img/port03.jpg";
 import port04 from "../assets/img/port04.jpg";
 import logoimg01 from "../assets/img/page/logo/logo01.jpg";
-import logoimg02 from "../assets/img/page/logo/logo02.png";
-import logoimg03 from "../assets/img/page/logo/logo03.png";
+import logoimg02 from "../assets/img/page/logo/logo03.png";
+import logoimg03 from "../assets/img/page/logo/logo02.png";
 import logoimg04 from "../assets/img/page/logo/logo04.svg";
+import logoimg05 from "../assets/img/page/logo/logo05.svg";
 import mainimg01 from "../assets/img/page/screen/mainimg01.jpg";
 import mainimg02 from "../assets/img/page/screen/mainimg02.jpg";
+import mainimg03 from "../assets/img/page/screen/mainimg03.jpg";
+import mainimg04 from "../assets/img/page/screen/mainimg04.jpg";
+import mainimg05 from "../assets/img/page/screen/mainimg05.jpg";
 import scrimg01 from "../assets/img/page/screen/screen01.jpg";
 import scrimg02 from "../assets/img/page/screen/screen02.jpg";
 import scrimg03 from "../assets/img/page/screen/screen03.jpg";
@@ -152,6 +156,8 @@ export const siteText = [
 
 export const proText = [
   //  프로젝트 : 여가부-개방관리시스템,공모전 사이트 / 에너지기술연구원관리자페이지 / 전통문화플랫폼 / 제보
+
+  // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 여가부-개방관리시스템,공모전 사이트
   {
     id: 1,
     num: "01",
@@ -173,16 +179,17 @@ export const proText = [
       "use stack : HTML5/CSS3, Scss Variable, next.js",
     ],
   },
+  // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 전통문화혁신플랫폼
   {
     id: 2,
     num: "02",
-    logoimg: logoimg03,
+    logoimg: logoimg02,
     logoalt: "전통문화혁신플랫폼",
     period: "2023.10 - 2023.12",
     text: ["make", "site compliant with", "html, css, jquery, and javascript"],
     title: "뷰를 이용한 사이트 제작",
     link: "http://chsr.re.kr/",
-    desc: "ddddddddd",
+    desc: "2023 전통문화서비스 활성화를 위한 온라인 플랫폼 기반 구축 ",
     main: mainimg02,
     mainalt: "프로젝트2",
     screen: scrimg02,
@@ -195,17 +202,21 @@ export const proText = [
       "use stack : HTML5/CSS3, Scss Variable, vue",
     ],
   },
+  // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 한국에너지기술연구원
   {
     id: 3,
     num: "03",
     logoimg: logoimg03,
     logoalt: "한국에너지기술연구원",
     period: "2023.10 - 2023.12",
-    text: ["make", "site compliant with", "vue.js"],
+    text: [
+      "CMS 화면단의 UI/UX 디자인을 구현하고, HTML, CSS, JavaScript 등을 사용하여 사용자 인터페이스를 개발하였습니다. 전자정부프레임워크의 템플릿 및 모듈을 활용하여 페이지 구성 요소들을 효율적으로 배치 및 최적화하였습니다.",
+      "'OpenWAX' 도구를 사용하여 웹 접근성 진단을 실시하였으며, 'W3C Markup Validation Service'통해 웹 호환성 진단을 하여 검증 및 오류 수정을 진행했습니다.",
+    ],
     title: "한국에너지기술연구원",
     link: "http://chsr.re.kr/",
     desc: "전자정부 프레임워크 기반의 CMS 사이트이며, API 조회·모니터링과 개방 DB 테이블 조회, 사용자 권한 관리, 메뉴 관리 등이 가능합니다.",
-    main: mainimg02,
+    main: mainimg03,
     mainalt: "프로젝트3",
     screen: scrimg03,
     screenalt: "전통문화혁신플랫폼",
@@ -217,22 +228,51 @@ export const proText = [
       "use stack : HTML5/CSS3, Scss Variable, vue",
     ],
   },
+  // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 제보
   {
     id: 4,
     num: "04",
     logoimg: logoimg04,
     logoalt: "제보",
     period: "2023.02 - 2023.05",
-    text: ["make", "site compliant with", "next.js"],
-    title: "사이트 라우터 연습 타이틀",
-    link: "https://mogefdatacontest.co.kr/",
+    text: [
+      "리액트 기반의 프로젝트 편의 지도 페이지의 UI를 개선하는 작업을 담당하였습니다.",
+      "site compliant with",
+      "next.js",
+    ],
+    title: "제보(Jebo)",
+    link: "https://jebo.io/home",
     desc: "기존 서비스의 안정적인 운영을 위해 유지보수와 개선 작업을 진행하는 한편, 새로운 서비스의 UI 개발 업무도 맡았습니다.",
+    main: mainimg04,
     code: "https://github.com/webstoryboy/port2023-next",
     view: "https://port2023-next.netlify.app",
     info: [
       "site coding",
       "production period : two days",
       "use stack : HTML5/CSS3, Scss Variable, next.js",
+    ],
+  },
+  // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 주식회사리스트
+  {
+    id: 5,
+    num: "05",
+    logoimg: logoimg05,
+    logoalt: "(주)리스트",
+    period: "2023.02 - 2024.08",
+    text: [
+      "기존 서비스의 안정적인 운영을 위해 지속적인 유지보수와 개선 페이지별 개선 작업을 담당하였습니다.",
+      "DBeaver 툴을 사용하여 입사자 및 퇴사자의 데이터 관리 업무를 수행하였습니다.",
+      "vue.js",
+    ],
+    title: "주식회사 리스트",
+    link: "http://li-st.com/",
+    desc: "",
+    main: mainimg05,
+    code: "https://github.com/webstoryboy/port2023-next",
+    view: "https://port2023-next.netlify.app",
+    info: [
+      "기존 서비스의 안정적인 운영을 위해 지속적인 유지보수와 개선 페이지별 개선 작업을 담당하였습니다.",
+      "DBeaver 툴을 사용하여 입사자 및 퇴사자의 데이터 관리 업무를 수행하였습니다.",
     ],
   },
 ];

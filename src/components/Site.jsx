@@ -31,7 +31,7 @@ const Site = () => {
                   github
                 </a>
                 {site.pdf && (
-                  <a href={site.pdf} target="_blank" rel="noreferrer">
+                  <a href={site.pdf} target="_blank" rel="noreferrer" download>
                     Download PDF
                   </a>
                 )}

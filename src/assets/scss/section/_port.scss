@@ -86,14 +86,15 @@
       .title {
         font-size: 1.5rem;
         padding: 0.8rem 0;
-        font-weight: 700;
+        font-weight: 900;
         color: var(--white);
         border-bottom: 3px solid var(--white);
         margin-bottom: 1rem;
       }
       .date {
         font-size: 1.2rem;
-        opacity: 0.7;
+        font-weight: 600;
+        color: var(--white);
       }
       .btn {
         border: 2px solid var(--white);

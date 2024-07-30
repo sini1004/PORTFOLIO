@@ -44,11 +44,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
         img {
           filter: blur(5px) grayscale(70%);
           -webkit-filter: blur(5px) grayscale(70%);
           position: relative;
+          width: 100%;
           height: 700px;
+          object-fit: contain;
+        }
+        &.multiple img {
+          width: 50%;
+          object-fit: contain;
         }
         p {
           position: absolute;
@@ -157,9 +164,23 @@
     }
 
     .project__text {
+      width: 95%;
+      margin: 0 auto;
       p {
-        text-indent: -22px;
-        margin-left: 22px;
+        font-size: 18px;
+        text-indent: -30px;
+        margin-left: 30px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+        &:nth-child(even) {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+
+        span {
+          margin-right: 5px;
+        }
       }
     }
   }

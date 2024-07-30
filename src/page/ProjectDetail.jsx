@@ -57,9 +57,21 @@ const ProjectDetail = () => {
         </div>
 
         <div className="project__contents">
-          <div className="detail__img">
+          <div
+            className={`detail__img ${
+              Array.isArray(project.screen) && project.screen.length > 1
+                ? "multiple"
+                : ""
+            }`}
+          >
             {project.id === 3 && <p>보안상 블러 처리하였습니다.</p>}
-            <img src={project.screen} alt={project.screenalt} />
+            {Array.isArray(project.screen) ? (
+              project.screen.map((image, index) => (
+                <img key={index} src={image.src} alt={image.alt} />
+              ))
+            ) : (
+              <img src={project.screen.src} alt={project.screen.alt} />
+            )}
           </div>
         </div>
 
@@ -67,16 +79,22 @@ const ProjectDetail = () => {
           {project.text.map((text, index) => (
             <p key={index}>
               <span>✏️</span>
-              {text}
+              {text.split(".").map((sentence, i, arr) => (
+                <React.Fragment key={i}>
+                  {sentence.trim()}
+                  {i < arr.length - 1 && "."}
+                  {i < arr.length - 1 && <br />}
+                </React.Fragment>
+              ))}
             </p>
           ))}
         </div>
 
-        <div className="info">
+        {/* <div className="info">
           {project.info.map((info, index) => (
             <span key={index}>{info}</span>
           ))}
-        </div>
+        </div> */}
         {/* <div className="btn">
           <a href={project.code} target="_blank" rel="noopener noreferrer">
             Code

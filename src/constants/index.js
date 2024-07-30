@@ -22,6 +22,8 @@ import mainimg05 from "../assets/img/page/screen/mainimg05.jpg";
 import scrimg01 from "../assets/img/page/screen/screen01.jpg";
 import scrimg02 from "../assets/img/page/screen/screen02.jpg";
 import scrimg03 from "../assets/img/page/screen/screen03.jpg";
+import scrimg04_1 from "../assets/img/page/screen/screen04-1.jpg";
+import scrimg04_2 from "../assets/img/page/screen/screen04-2.jpg";
 
 export const headerNav = [
   {
@@ -155,7 +157,7 @@ export const siteText = [
 ];
 
 export const proText = [
-  //  프로젝트 : 리치데이터, 여가부-개방관리시스템,공모전 사이트 / 에너지기술연구원관리자페이지 / 전통문화플랫폼 / 제보
+  //  프로젝트 : 리치데이터, 수집관리 시스템, 여가부-개방관리시스템,공모전 사이트 / 에너지기술연구원관리자페이지 / 전통문화플랫폼 / 제보
 
   // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 여가부-개방관리시스템,공모전 사이트
   {
@@ -170,8 +172,7 @@ export const proText = [
     desc: "'청소년데이터 융복합 분석·활용 공모전' 은 여성가족부에서 주최하는 공모전 웹 사이트로서 공모전 접수를 할 수 있으며, 공모전 개요, 요강과 접수 확인이 가능합니다.",
     main: mainimg01,
     mainalt: "프로젝트1",
-    screen: scrimg01,
-    screenalt: "공모전공공데이터검색기능",
+    screen: [{ src: scrimg01, alt: "공모전공공데이터검색기능" }],
     code: "https://github.com/webstoryboy/port2023-next",
     info: [
       "site coding",
@@ -192,8 +193,7 @@ export const proText = [
     desc: "2023 전통문화서비스 활성화를 위한 온라인 플랫폼 기반 구축 ",
     main: mainimg02,
     mainalt: "프로젝트2",
-    screen: scrimg02,
-    screenalt: "전통문화혁신플랫폼",
+    screen: [{ src: scrimg02, alt: "전통문화혁신플랫폼" }],
     code: "https://github.com/webstoryboy/port2023-vue",
     view: "https://port2023-vue.netlify.app",
     info: [
@@ -218,8 +218,7 @@ export const proText = [
     desc: "전자정부 프레임워크 기반의 CMS 사이트이며, API 조회·모니터링과 개방 DB 테이블 조회, 사용자 권한 관리, 메뉴 관리 등이 가능합니다.",
     main: mainimg03,
     mainalt: "프로젝트3",
-    screen: scrimg03,
-    screenalt: "전통문화혁신플랫폼",
+    screen: [{ src: scrimg03, alt: "전통문화혁신플랫폼" }],
     // code: 'https://github.com/webstoryboy/port2023-vue',
     // view: 'https://port2023-vue.netlify.app',
     info: [
@@ -236,21 +235,21 @@ export const proText = [
     logoalt: "제보",
     period: "2023.02 - 2023.05",
     text: [
-      "리액트 기반의 프로젝트 편의 지도 페이지의 UI를 개선하는 작업을 담당하였습니다.",
-      "site compliant with",
-      "next.js",
+      "리액트 기반의 프로젝트로 편의 지도 페이지의 UI를 개선하는 작업을 담당하였습니다. Styled-components를 활용하여 UI 요소들의 일관된 스타일을 유지하고, 코드의 재사용성을 높였습니다. 제보 및 공공 정보를 시각적으로 구분하여 사용자가 쉽게 인식할 수 있도록 redMarker, blueMarker 등의 속성을 활용하였습니다. 또한, 편의지도 리스트를 효율적으로 표시하고 사용자 상호작용을 개선하기 위해 MoreItemBoxWrapper, ItemListClose 컴포넌트를 추가하였습니다.",
+      "또한 제보 프로젝트의 QA(품질 보증)를 담당하였습니다. 다양한 디바이스 테스트, 브라우저 호환성 테스트, 기능 테스트와 버그 리포트를 통해 프로젝트의 품질을 보장하였습니다.",
+      "제보큐브(구 제보 더보기)는 사용자가 커뮤니티, 채널, 테마, 캠페인 피드에 참여할 수 있는 공간으로, 이를 보다 직관적이고 사용하기 쉽게 만들기 위해 UI/UX 개선 및 디자인 작업을 수행하였습니다. 사용자 경험을 최적화하고, 시각적으로 매력적인 인터페이스를 제공하여 사용자 참여를 촉진할 수 있도록 하였습니다.",
     ],
     title: "제보(Jebo)",
     link: "https://jebo.io/home",
-    desc: "기존 서비스의 안정적인 운영을 위해 유지보수와 개선 작업을 진행하는 한편, 새로운 서비스의 UI 개발 업무도 맡았습니다.",
+    desc: "사용자가 실시간으로 교통, 날씨, 재난, 사건사고 등 주변의 상황 정보를 공유하는 서비스입니다. 사용자들이 제공하는 순간 상황 정보가 다른 사용자들에게 중요한 자료가 될 수 있습니다.",
     main: mainimg04,
+    mainalt: "프로젝트4",
+    screen: [
+      { src: scrimg04_1, alt: "편의지도1" },
+      { src: scrimg04_2, alt: "편의지도2" },
+    ],
     code: "https://github.com/webstoryboy/port2023-next",
     view: "https://port2023-next.netlify.app",
-    info: [
-      "site coding",
-      "production period : two days",
-      "use stack : HTML5/CSS3, Scss Variable, next.js",
-    ],
   },
   // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 주식회사리스트
   {
@@ -268,12 +267,9 @@ export const proText = [
     link: "http://li-st.com/",
     desc: "",
     main: mainimg05,
+    screen: [{ src: scrimg01, alt: "공모전공공데이터검색기능" }],
     code: "https://github.com/webstoryboy/port2023-next",
     view: "https://port2023-next.netlify.app",
-    info: [
-      "기존 서비스의 안정적인 운영을 위해 지속적인 유지보수와 개선 페이지별 개선 작업을 담당하였습니다.",
-      "DBeaver 툴을 사용하여 입사자 및 퇴사자의 데이터 관리 업무를 수행하였습니다.",
-    ],
   },
 ];
 

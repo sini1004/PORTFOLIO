@@ -14,16 +14,20 @@ import logoimg02 from "../assets/img/page/logo/logo03.png";
 import logoimg03 from "../assets/img/page/logo/logo02.png";
 import logoimg04 from "../assets/img/page/logo/logo04.svg";
 import logoimg05 from "../assets/img/page/logo/logo05.svg";
+import logoimg06 from "../assets/img/page/logo/logo06.png";
 import mainimg01 from "../assets/img/page/screen/mainimg01.jpg";
 import mainimg02 from "../assets/img/page/screen/mainimg02.jpg";
 import mainimg03 from "../assets/img/page/screen/mainimg03.jpg";
 import mainimg04 from "../assets/img/page/screen/mainimg04.jpg";
 import mainimg05 from "../assets/img/page/screen/mainimg05.jpg";
+import mainimg06 from "../assets/img/page/screen/mainimg06.png";
 import scrimg01 from "../assets/img/page/screen/screen01.jpg";
 import scrimg02 from "../assets/img/page/screen/screen02.jpg";
 import scrimg03 from "../assets/img/page/screen/screen03.jpg";
 import scrimg04_1 from "../assets/img/page/screen/screen04-1.jpg";
 import scrimg04_2 from "../assets/img/page/screen/screen04-2.jpg";
+import scrimg05 from "../assets/img/page/screen/screen05.jpg";
+import scrimg06 from "../assets/img/page/screen/screen06.jpg";
 
 export const headerNav = [
   {
@@ -267,7 +271,27 @@ export const proText = [
     link: "http://li-st.com/",
     desc: "",
     main: mainimg05,
-    screen: [{ src: scrimg01, alt: "공모전공공데이터검색기능" }],
+    screen: [{ src: scrimg05, alt: "리스트_데이터바우처" }],
+    code: "https://github.com/webstoryboy/port2023-next",
+    view: "https://port2023-next.netlify.app",
+  },
+  // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 주식회사리스트
+  {
+    id: 6,
+    num: "06",
+    logoimg: logoimg06,
+    logoalt: "수집관리시스템",
+    period: "2024.05 - 2024.08",
+    text: [
+      "시스템의 사용자 인터페이스(UI)를 구성하는 화면 마크업과 CSS 스타일링을 담당하였습니다.",
+      "사용자가 다양한 정보를 쉽게 접근할 수 있도록 팝업(모달창) 기능을 구현하였고, 팝업(모달창)에서 이미지를 클릭하여 선택할 수 있는 기능을 추가하고, 선택된 이미지를 시각적으로 강조하여 표시하였습니다.",
+      "데이터 분석 결과를 시각적으로 제공하기 위한 대시보드의 화면 설계 및 마크업을 작성하였습니다.",
+    ],
+    title: "수집 관리 시스템",
+    link: "http://li-st.com/",
+    desc: "",
+    main: mainimg06,
+    screen: [{ src: scrimg06, alt: "수집관리시스템" }],
     code: "https://github.com/webstoryboy/port2023-next",
     view: "https://port2023-next.netlify.app",
   },

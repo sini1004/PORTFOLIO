@@ -87,6 +87,17 @@
       }
     }
   }
+  &.design6 {
+    background-color: #f8f8f8;
+    .project__img {
+      border: 7px solid #f8f8f8;
+    }
+    .project__desc {
+      h1 {
+        color: #444;
+      }
+    }
+  }
 
   .project__inner {
     background-color: var(--white);

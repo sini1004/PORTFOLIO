@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
 import { proText } from "../constants";
-import { gsap } from "gsap";
+import { distribute, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Port = () => {
@@ -34,6 +34,11 @@ const Port = () => {
     };
   }, []);
 
+  const desiredOrder = [6, 1, 2, 3, 4, 5];
+  const orderedProText = desiredOrder.map((id) =>
+    proText.find((pro) => pro.id === id)
+  );
+
   return (
     <section id="pro" ref={horizontalRef}>
       <div className="pro__inner">
@@ -41,7 +46,7 @@ const Port = () => {
           Project <em>프로젝트 작업물</em>
         </div>
         <div className="pro__wrap">
-          {proText.map((pro, key) => (
+          {orderedProText.map((pro, key) => (
             <article
               className={`pro__item p${key + 1}`}
               key={key}

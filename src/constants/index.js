@@ -98,7 +98,7 @@ export const skillText = [
 export const siteText = [
   {
     id: 1,
-    period: "2023.1 - 2023.2",
+    period: "2023.01 - 2023.02",
     title: "CHWEDU(학생이용 앱)",
     text: [
       "로그인 시 '@'를 포함한 이메일 형식의 아이디와 5자리 이상 비밀번호를 입력해야 하는 조건을 붙였으며, 로그인시 입력했던 이메일의 '@'앞 자리를 아이디로 인식하여 메인에서 볼 수 있습니다. jsQR 모듈을 이용하여 QR인식을 할 수 있으며, 투두리스트에 할 일 추가, 삭제, 수정을 할 수 있습니다. Math.random()를 이용해 랜덤으로 단어를 볼 수 있게 하였습니다.",
@@ -106,11 +106,11 @@ export const siteText = [
     ],
     view: "https://sini1004.github.io/PWA_CHWEDU/",
     code: "https://github.com/sini1004/PWA_CHWEDU/",
-    pdf: "/assets/pdf/CHWEDU.pdf",
+    pdf: "./assets/pdf/CHWEDU.pdf",
   },
   {
     id: 2,
-    period: "2023.11 - 2023.2",
+    period: "2022.11 - 2022.11",
     title: "React_Todo List",
     text: [
       "투두리스트에 투두아이템을 추가, 삭제할 수 있고, 좌측상단 버튼을 통해 다크 모드를 설정할 수 있습니다. 해당 투두 아이템을 완료했는지에 따라서 필터링도 가능합니다.",
@@ -121,7 +121,7 @@ export const siteText = [
   },
   {
     id: 3,
-    period: "2023.11 - 2023.2",
+    period: "2022.11 - 2022.11",
     title: "React_Shopphing(LACOSTE)",
     text: [
       "데이터베이스 역할을 해주는 db.josn파일을 생성하여, 이미지의 url, 가격 등의 정보를 넣어주었습니다. fetch함수를 이용해 API호출을 하였으며, 로그인이 되었을 때에만 상품의 상세페이지를 볼 수 있도록 하였고, 검색 기능을 구현하였습니다. React-Bootstrap과 미디어쿼리를 사용해 반응형으로 작업하였습니다.",
@@ -132,31 +132,33 @@ export const siteText = [
   },
   {
     id: 4,
-    period: "2023.11 - 2023.2",
-    title: "사이트 라우터 연습 타이틀",
+    period: "2022.12 - 2022.12",
+    title: "React_OTT 클론코딩",
     text: [
-      "데이터베이스 역할을 해주는 db.josn파일을 생성하여, 이미지의 url, 가격 ",
-      "make",
-      "site compliant with",
-      "next.js",
+      "react-router를 사용해 SPA형태로 구성되었습니다.  axios를 활용해 데이터를 불러왔으며, async, await를 사용해 각각의 api를 비동기적으로 불러왔습니다.",
+      "React, Router, React-Bootstrap, Sass",
     ],
-    link: "https://mogefdatacontest.co.kr/",
-    desc: "기존 서비스의 안정적인 운영을 위해 유지보수와 개선 작업을 진행하는 한편, 새로운 서비스의 UI 개발 업무도 맡았습니다.",
-    code: "https://github.com/webstoryboy/port2023-next",
-    view: "https://port2023-next.netlify.app",
+    view: "https://shinhee-ott-hulu.netlify.app/",
+    code: "https://github.com/sini1004/OTT",
   },
   {
     id: 5,
-    period: "2023.11 - 2023.2",
+    period: "2023.12 - 2024.01",
     title: "wedding invitation",
+    text: [""],
+    view: "#",
+    code: "https://github.com/ChangSol/wedding-invitation",
+  },
+  {
+    id: 6,
+    period: "2023.11 - 2023.2",
+    title: "Vue_Todo",
     text: [
-      "데이터베이스 역할을 해주는 db.josn파일을 생성하여, 이미지의 url, 가격 등의 정보를 넣어주었습니다. fetch함수를 이용해 API호출을 하였으며, 로그인이 되었을 때에만 상품의 상세페이지를 볼 수 있도록 하였고, 검색 기능을 구현하였습니다. React-Bootstrap과 미디어쿼리를 사용해 반응형으로 작업하였습니다.",
-      "React, json-server, Router, React-Bootstrap, Sass",
+      "vue를 학습하며 만든 Todo List 입니다. localStorage를 사용하여 새로고침해도 등록한 리스트가 남아있을 수 있게 하였으며, TransitionGroup Component를 사용하여 애니메이션을 적용하였습니다. Madal Component를 사용하여 input창에 아무것도 입력하지 않고 추가하였을 때 Modal이 뜰 수 있도록 하였습니다.",
+      "Vue, TransitionGroup Component, Modal Component",
     ],
-    link: "https://wedding-invitation.chang-ju.shin-hee.com",
-    desc: "기존 서비스의 안정적인 운영을 위해 유지보수와 개선 작업을 진행하는 한편, 새로운 서비스의 UI 개발 업무도 맡았습니다.",
-    code: "https://github.com/webstoryboy/port2023-next",
-    view: "https://port2023-next.netlify.app",
+    view: "https://shinhee-vue-todo.netlify.app/",
+    code: "https://github.com/sini1004/Vue_TODO",
   },
 ];
 
@@ -199,11 +201,6 @@ export const proText = [
     screen: [{ src: scrimg02, alt: "전통문화혁신플랫폼" }],
     code: "https://github.com/webstoryboy/port2023-vue",
     view: "https://port2023-vue.netlify.app",
-    info: [
-      "site coding",
-      "production period : two days",
-      "use stack : HTML5/CSS3, Scss Variable, vue",
-    ],
   },
   // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 한국에너지기술연구원
   {

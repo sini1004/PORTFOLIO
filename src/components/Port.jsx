@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 import { proText } from "../constants";
 import { distribute, gsap } from "gsap";
@@ -58,6 +59,36 @@ const Port = () => {
                 target="_blank"
                 className="pro__img"
                 rel="noreferrer"
+                onClick={(e) => {
+                  if (pro.link === "보안 이슈") {
+                    e.preventDefault(); // 링크 기본 동작 방지
+                    Swal.fire({
+                      title: "안녕하세요!",
+                      text: "Modal with a custom image.",
+                      html: `
+                      현재 클릭하신 사이트는<br/>
+                      보안상의 이유로 확인하실 수 없습니다.🥲<br/>
+                      감사합니다.🙏🏻
+                      `,
+                      showClass: {
+                        popup: `
+                          animate__animated
+                          animate__fadeInUp
+                          animate__faster
+                        `,
+                      },
+                      hideClass: {
+                        popup: `
+                          animate__animated
+                          animate__fadeOutDown
+                          animate__faster
+                        `,
+                      },
+                      showCancelButton: false,
+                      confirmButtonText: "확인",
+                    });
+                  }
+                }}
               >
                 <img src={pro.main} alt={pro.mainalt} />
               </a>

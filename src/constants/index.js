@@ -214,7 +214,7 @@ export const proText = [
       "'OpenWAX' 도구를 사용하여 웹 접근성 진단을 실시하였으며, 'W3C Markup Validation Service'통해 웹 호환성 진단을 하여 검증 및 오류 수정을 진행했습니다.",
     ],
     title: "한국에너지기술연구원",
-    link: "http://chsr.re.kr/",
+    link: "보안 이슈",
     desc: "전자정부 프레임워크 기반의 CMS 사이트이며, API 조회·모니터링과 개방 DB 테이블 조회, 사용자 권한 관리, 메뉴 관리 등이 가능합니다.",
     main: mainimg03,
     mainalt: "프로젝트3",

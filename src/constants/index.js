@@ -15,6 +15,7 @@ import logoimg03 from "../assets/img/page/logo/logo02.png";
 import logoimg04 from "../assets/img/page/logo/logo04.svg";
 import logoimg05 from "../assets/img/page/logo/logo05.svg";
 import logoimg06 from "../assets/img/page/logo/logo06.png";
+import logoimg07 from "../assets/img/page/logo/logo07.png";
 import mainimg01 from "../assets/img/page/screen/mainimg01.jpg";
 import mainimg02 from "../assets/img/page/screen/mainimg02.jpg";
 import mainimg03 from "../assets/img/page/screen/mainimg03.jpg";
@@ -171,7 +172,7 @@ export const proText = [
     num: "01",
     logoimg: logoimg01,
     logoalt: "여성가족부",
-    period: "2023.2 - 2024.6",
+    period: "2023.02 - 2024.06",
     text: [
       "공모전 상세 정보를 표시하는 페이지를 구현하였으며, 참가자들이 공모전에 쉽게 신청할 수 있도록 참가 신청 페이지를 구현하였고, 공지사항/문의하기 등의 페이지를 구현하였습니다.",
       "기존 테이블 태그로 작성된 HTML을 <div>, <section>, <article> 등의 시맨틱한 마크업 태그로 변경하여 웹 접근성과 검색 엔진 최적화를 강화하였습니다.",
@@ -236,7 +237,7 @@ export const proText = [
     period: "2023.02 - 2023.05",
     text: [
       "리액트 기반의 프로젝트로 편의 지도 페이지의 UI를 개선하는 작업을 담당하였습니다. Styled-components를 활용하여 UI 요소들의 일관된 스타일을 유지하고, 코드의 재사용성을 높였습니다. 제보 및 공공 정보를 시각적으로 구분하여 사용자가 쉽게 인식할 수 있도록 redMarker, blueMarker 등의 속성을 활용하였습니다. 또한, 편의지도 리스트를 효율적으로 표시하고 사용자 상호작용을 개선하기 위해 MoreItemBoxWrapper, ItemListClose 컴포넌트를 추가하였습니다.",
-      "또한 제보 프로젝트의 QA(품질 보증)를 담당하였습니다. 다양한 디바이스 테스트, 브라우저 호환성 테스트, 기능 테스트와 버그 리포트를 통해 프로젝트의 품질을 보장하였습니다.",
+      "제보 프로젝트의 QA(품질 보증)를 담당하였습니다. 다양한 디바이스 테스트, 브라우저 호환성 테스트, 기능 테스트와 버그 리포트를 통해 프로젝트의 품질을 보장하였습니다.",
       "제보큐브(구 제보 더보기)는 사용자가 커뮤니티, 채널, 테마, 캠페인 피드에 참여할 수 있는 공간으로, 이를 보다 직관적이고 사용하기 쉽게 만들기 위해 UI/UX 개선 및 디자인 작업을 수행하였습니다. 사용자 경험을 최적화하고, 시각적으로 매력적인 인터페이스를 제공하여 사용자 참여를 촉진할 수 있도록 하였습니다.",
     ],
     title: "제보(Jebo)",
@@ -271,7 +272,7 @@ export const proText = [
     code: "https://github.com/webstoryboy/port2023-next",
     view: "https://port2023-next.netlify.app",
   },
-  // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 주식회사리스트
+  // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 수집관리시스템
   {
     id: 6,
     num: "06",
@@ -284,10 +285,26 @@ export const proText = [
       "데이터 분석 결과를 시각적으로 제공하기 위한 대시보드의 화면 설계 및 마크업을 작성하였습니다.",
     ],
     title: "수집 관리 시스템",
-    link: "http://li-st.com/",
+    link: "보안 이슈",
     desc: "",
     main: mainimg06,
     screen: [{ src: scrimg06, alt: "수집관리시스템" }],
+    code: "https://github.com/webstoryboy/port2023-next",
+    view: "https://port2023-next.netlify.app",
+  },
+  // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 리치데이터
+  {
+    id: 7,
+    num: "07",
+    logoimg: logoimg07,
+    logoalt: "리치데이터",
+    period: "2024.07 - 2024.08",
+    text: ["fffff"],
+    title: "리치데이터",
+    link: "https://richdata.kr/",
+    desc: "민원상담 데이터 ",
+    main: mainimg06,
+    screen: [{ src: scrimg06, alt: "리치데이터" }],
     code: "https://github.com/webstoryboy/port2023-next",
     view: "https://port2023-next.netlify.app",
   },

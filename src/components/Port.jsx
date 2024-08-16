@@ -35,7 +35,7 @@ const Port = () => {
     };
   }, []);
 
-  const desiredOrder = [6, 1, 2, 3, 4, 5];
+  const desiredOrder = [7, 6, 1, 2, 3, 4, 5];
   const orderedProText = desiredOrder.map((id) =>
     proText.find((pro) => pro.id === id)
   );

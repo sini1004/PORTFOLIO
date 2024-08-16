@@ -98,6 +98,17 @@
       }
     }
   }
+  &.design7 {
+    background-color: #1fab89;
+    .project__img {
+      border: 7px solid #1fab89;
+    }
+    .project__desc {
+      h1 {
+        color: #1fab89;
+      }
+    }
+  }
 
   .project__inner {
     background-color: var(--white);

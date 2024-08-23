@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
@@ -9,6 +9,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const Port = () => {
   const horizontalRef = useRef(null);
   const sectionsRef = useRef([]);
+  const [tooltip, setTooltip] = useState({
+    text: "",
+    visible: false,
+    position: { x: 0, y: 0 },
+  });
 
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
@@ -34,6 +39,23 @@ const Port = () => {
       scrollTween.kill();
     };
   }, []);
+
+  const handleMouseEnter = (event) => {
+    const tooltipText = `이미지 클릭 시 해당 사이트로 이동할 수 있습니다.<br>(일부 사이트 접속 불가)`;
+    const position = { x: event.clientX, y: event.clientY };
+    setTooltip({ text: tooltipText, visible: true, position });
+  };
+
+  const handleMouseLeave = () => {
+    setTooltip({ text: "", visible: false, position: { x: 0, y: 0 } });
+  };
+
+  const handleMouseMove = (event) => {
+    setTooltip((prevTooltip) => ({
+      ...prevTooltip,
+      position: { x: event.clientX, y: event.clientY },
+    }));
+  };
 
   const desiredOrder = [7, 6, 1, 2, 3, 4, 5];
   const orderedProText = desiredOrder.map((id) =>
@@ -63,7 +85,7 @@ const Port = () => {
                   if (pro.link === "보안 이슈") {
                     e.preventDefault(); // 링크 기본 동작 방지
                     Swal.fire({
-                      title: "안녕하세요!",
+                      title: "죄송합니다.",
                       text: "Modal with a custom image.",
                       html: `
                       현재 클릭하신 사이트는<br/>
@@ -89,6 +111,9 @@ const Port = () => {
                     });
                   }
                 }}
+                onMouseEnter={(e) => handleMouseEnter(pro, e)}
+                onMouseLeave={handleMouseLeave}
+                onMouseMove={handleMouseMove}
               >
                 <img src={pro.main} alt={pro.mainalt} />
               </a>
@@ -101,6 +126,24 @@ const Port = () => {
             </article>
           ))}
         </div>
+        {tooltip.visible && (
+          <div
+            className="tooltip"
+            style={{
+              position: "fixed",
+              top: tooltip.position.y + 1,
+              left: tooltip.position.x + 5,
+              backgroundColor: "rgba(0,0,0,0.5)",
+              color: "#fff",
+              padding: "5px 10px",
+              borderRadius: "4px",
+              pointerEvents: "none",
+              zIndex: 1000,
+              whiteSpace: "pre-line", // 줄바꿈을 제대로 표시하기 위한 스타일
+            }}
+            dangerouslySetInnerHTML={{ __html: tooltip.text }}
+          />
+        )}
       </div>
     </section>
   );

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 
 import { proText } from "../constants";
-import { distribute, gsap } from "gsap";
+import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Port = () => {
@@ -92,6 +92,7 @@ const Port = () => {
                       보안상의 이유로 확인하실 수 없습니다.🥲<br/>
                       감사합니다.🙏🏻
                       `,
+                      position: "bottom",
                       showClass: {
                         popup: `
                           animate__animated

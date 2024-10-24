@@ -1,6 +1,8 @@
 #header {
   @include position-fixed;
   z-index: 10000;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
 }
 .header__inner {
   @include flex-between;

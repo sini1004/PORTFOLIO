@@ -109,6 +109,17 @@
       }
     }
   }
+  &.design8 {
+    background-color: #ff892a;
+    .project__img {
+      border: 7px solid #ff892a;
+    }
+    .project__desc {
+      h1 {
+        color: #ff892a;
+      }
+    }
+  }
 
   .project__inner {
     background-color: var(--white);
@@ -184,6 +195,20 @@
         overflow: hidden;
         object-fit: cover;
       }
+      .sub__img {
+        display: flex;
+        flex-basis: auto;
+        gap: 5%;
+        margin-top: 30px;
+
+        img:nth-child(1) {
+          border: 2px solid blue; /* 첫 번째 이미지에 파란색 border */
+        }
+
+        img:nth-child(2) {
+          border: 2px solid green; /* 두 번째 이미지에 초록색 border */
+        }
+      }
     }
 
     .project__text {
@@ -191,8 +216,15 @@
       margin: 0 auto;
       margin-top: 10px;
 
-      p {
+      .text__title {
         font-size: 18px;
+        font-weight: 600;
+        background-color: #e7e5e4;
+        padding: 0.5rem 1rem;
+      }
+
+      p {
+        font-size: 16px;
         text-indent: -30px;
         margin-left: 30px;
         margin-top: 5px;

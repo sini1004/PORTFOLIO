@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useParams } from "react-router-dom";
-import { siteText } from "../constants";
 import { proText } from "../constants";
 
 const ProjectDetail = () => {
@@ -65,6 +64,7 @@ const ProjectDetail = () => {
             }`}
           >
             {project.id === 3 && <p>보안상 블러 처리하였습니다.</p>}
+
             {Array.isArray(project.screen) ? (
               project.screen.map((image, index) => (
                 <img key={index} src={image.src} alt={image.alt} />
@@ -73,20 +73,28 @@ const ProjectDetail = () => {
               <img src={project.screen.src} alt={project.screen.alt} />
             )}
           </div>
+
+          <div className="sub__img">
+            <img src="" alt="" />
+            <img src="" alt="" />
+          </div>
         </div>
 
         <div className="project__text">
-          {project.text.map((text, index) => (
-            <p key={index}>
-              <span>✏️</span>
-              {text.split(".").map((sentence, i, arr) => (
-                <React.Fragment key={i}>
-                  {sentence.trim()}
-                  {i < arr.length - 1 && "."}
-                  {i < arr.length - 1 && <br />}
-                </React.Fragment>
-              ))}
-            </p>
+          {project.text.map((item, index) => (
+            <div key={index}>
+              <h4 className="text__title">{item.texttitle}</h4>
+              <p>
+                <span>✏️</span>
+                {item.textdesc.split(".").map((sentence, i, arr) => (
+                  <React.Fragment key={i}>
+                    {sentence.trim()}
+                    {i < arr.length - 1 && "."}
+                    {i < arr.length - 1 && <br />}
+                  </React.Fragment>
+                ))}
+              </p>
+            </div>
           ))}
         </div>
 

@@ -51,6 +51,7 @@ const ProjectDetail = () => {
           <div className="project__desc">
             <h1>{project.title}</h1>
             <span>{project.period}</span>
+            {/* <span>{project.contribution}</span> */}
             <p>{project.desc}</p>
           </div>
         </div>
